@@ -2,6 +2,7 @@
 <head>
     <title>Xpath Evaluator</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="xpath-evaluator.js"></script>
 </head>
 <h1>Xpath Evaluator - check before you code!</h1>
 <div id="mainBody">

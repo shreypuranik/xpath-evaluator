@@ -89,6 +89,13 @@ class Scraper
     }
 
 
+    function getResponse()
+    {
+        $response = $this->pageXML->xpath($this->xpath);
+        return $response;
+    }
+
+
     /**
      * Return the XML for a
      * specified URL.
