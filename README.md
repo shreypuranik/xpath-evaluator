@@ -8,3 +8,5 @@ I wanted to build a read-to-use application that I can just feed a URL too, and 
 This application can be served from any server as long as it's got apache and PHP running.
 
 Please remember: Always ensure you have permission before scraping a site.
+
+Related tags: #PHP, #scraping, #XML
