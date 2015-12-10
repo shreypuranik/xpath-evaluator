@@ -1,4 +1,5 @@
 <?php
+include_once("trait.GenericFunctions.php");
 
 /**
  * Class Scraper
@@ -7,6 +8,7 @@
  */
 class Scraper
 {
+    use GenericFunctions;
 
     protected $url;
     protected $xpath;
@@ -28,7 +30,7 @@ class Scraper
     {
         $this->setURL($url);
         $this->setXpath($xpath);
-        $this->setPageXML($this->getXML($this->getURL()));
+        $this->setPageXML($this->getXMLFromURL($this->getURL()));
     }
 
     /**
@@ -95,31 +97,6 @@ class Scraper
         return $response;
     }
 
-
-    /**
-     * Return the XML for a
-     * specified URL.
-     * Static for re-usability.
-     * @param $url
-     * @return SimpleXMLElement
-     */
-
-    static function getXML($url)
-    {
-
-        for($i=0;$i<10; $i++){
-            $html = file_get_contents($url);
-            if ($html){
-                break;
-            }
-        }
-
-
-        $doc = new DomDocument();
-        @$doc->loadHTML($html);
-        $xml = simplexml_import_dom($doc);
-        return $xml;
-    }
 
 }
 
