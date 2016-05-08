@@ -17,7 +17,8 @@ class Scraper
     function __construct()
     {
         //if hosting this application on a server with public access,
-        // you could use the constructor to initialize IP checks.
+        // you could use the constructor to initialize IP checks to avoid
+        //your server being used for external productions
     }
 
     /**
@@ -91,6 +92,10 @@ class Scraper
     }
 
 
+    /**
+     * Get back the response from the generated XML
+     * @return mixed
+     */
     function getResponse()
     {
         $response = $this->pageXML->xpath($this->xpath);
