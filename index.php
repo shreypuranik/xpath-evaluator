@@ -49,11 +49,9 @@
     <div class="row">
         <div class="col-sm-3">
     <span>URL of website:</span></div>
-            <div class="col-sm-5">    <input type="text" name="site-url" id="site-url" size="75">
+            <div class="col-sm-9">    <input type="text" name="site-url" id="site-url">
 
     </div>
-        <div class="col-sm-4">
-        </div>
         </div>
     <br />
     <div class="row">
