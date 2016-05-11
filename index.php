@@ -14,7 +14,7 @@
         }
 
         .bs_input{
-            width: 50%;
+            width: 65%;
         }
     </style>
 
