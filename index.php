@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="xpath-evaluator.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <style>
     /*    #mainBody{
             width: 400px;
@@ -42,7 +43,7 @@
 
 </div>
 <div id="top" class="container">
-    <h1 align="center">All you need is the url and xpath<small> to perform a quick test!</small></h1>
+    <h3 align="center">All you need is the url and xpath<small> to perform a quick test!</small></h3>
 <p>As developers, before setting off to scrape a new website, it's useful to know if a simple xpath will work! Just feed in the URL of the page you want to scrape, and the xpath, and see the output. </p>
 <div class="form">
     <div class="row">
