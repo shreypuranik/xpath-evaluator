@@ -50,10 +50,10 @@
     <div class="row">
         <div class="col-sm-3">
             </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
         <input type="submit" id="check-xpath" class="btn btn-primary btn-lg btn-block" value="Check xpath">
             </div>
-        <div class="col-sm-5">
+        <div class="col-sm-6">
         </div>
         </div>
 </div>
