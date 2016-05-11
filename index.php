@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="xpath-evaluator.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     /*    #mainBody{
             width: 400px;
@@ -30,6 +31,7 @@
             color: white;
         }
     </style>
+
 </head>
 <div class="row footerbox">
     <div class="col-sm-6 ">
