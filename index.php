@@ -8,28 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <style>
-    /*    #mainBody{
-            width: 400px;
-            margin: auto;
-            font-family: Verdana;
-            font-size: 11px;
-        }
-        #response{
-            border-bottom: 1px dotted grey;
-            margin-bottom: 5px;
-        }
-        #check-xpath{
-            align:center;
-        }
-
-        #warning{
-            margin-top: 10px;
-            color: lightcoral;
-        }
-        */
         .footerbox{
             background: #2E0854;
             color: white;
+        }
+
+        .bs_input{
+            width: 50%;
         }
     </style>
 
@@ -49,7 +34,7 @@
     <div class="row">
         <div class="col-sm-3">
     <span>URL of website:</span></div>
-            <div class="col-sm-9">    <input type="text" name="site-url" id="site-url">
+            <div class="col-sm-9">    <input type="text" name="site-url" id="site-url" class="bs_input">
 
     </div>
         </div>
@@ -57,7 +42,7 @@
     <div class="row">
         <div class="col-sm-3">
     <span>Your xpath: </span></div>
-        <div class="col-sm-9">    <input type="text" name="xpath" id="xpath" size="75">
+        <div class="col-sm-9">    <input type="text" name="xpath" id="xpath" class="bs_input">
    </div>
         </div>
 
