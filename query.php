@@ -37,6 +37,18 @@ $output .=<<<EOD
 </div>
 <div style="clear:both;"></div>
 </div>
+<div class="row">
+<div class="col-sm-1">
+</div>
+
+<br />
+<div class="col-sm-1">
+<button type="button" class="btn btn-warning"><a href="#top">Back to top</a></button>
+</div>
+<div class="col-sm-10">
+</div>
+
+</div>
 
 EOD;
 
