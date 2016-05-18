@@ -3,7 +3,6 @@
 trait GenericFunctions
 {
 
-
     /**
      * Get the HTML
      * from the supplied URL
@@ -12,7 +11,7 @@ trait GenericFunctions
      */
 
 
-    function getHTMLFromURL($url)
+    public function getHTMLFromURL($url)
     {
         $html = "";
         for($i=0;$i<10; $i++){
@@ -33,7 +32,7 @@ trait GenericFunctions
      * @return SimpleXMLElement
      */
 
-    function getXMLFromURL($url)
+    public function getXMLFromURL($url)
     {
 
         $html = $this->getHTMLFromURL($url);
@@ -49,24 +48,10 @@ trait GenericFunctions
      * @param $string
      * @return SimpleXMLElement
      */
-    function getXMLFromString($string)
+    public function getXMLFromString($string)
     {
         $xml = simplexml_load_string($string);
         return $xml;
     }
 
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
