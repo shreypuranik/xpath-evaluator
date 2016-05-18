@@ -43,6 +43,12 @@ trait GenericFunctions
         return $xml;
     }
 
+    /**
+     * Retrieve the XML once it's gone through
+     * PHP's simplexml_load method
+     * @param $string
+     * @return SimpleXMLElement
+     */
     function getXMLFromString($string)
     {
         $xml = simplexml_load_string($string);
