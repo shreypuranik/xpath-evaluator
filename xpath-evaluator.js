@@ -1,5 +1,14 @@
 
 $( document ).ready(function() {
+    $("#xml_input").change(function(){
+       $("#site-url").val("");
+    });
+
+    $("#site-url").change(function(){
+        $("#xml_input").val("");
+    });
+
+
     $("#check-xpath").click(function(){
         var siteURL = $("#site-url").val();
         var siteXpath = $("#xpath").val();

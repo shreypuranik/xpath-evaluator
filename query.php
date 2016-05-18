@@ -16,7 +16,14 @@ if ((empty($_GET['url']))
 }
 
 if ($incorrectFlag){
-    echo "<p>Please ensure you've supplied both xpath AND a url OR a full XML.</p>";
+    $html = <<<EOD
+<br />
+<div id="container">
+<div id="response"><pre><p>Please ensure you've supplied both xpath AND a url OR a full XML.</p></pre>
+</div>
+</div>
+EOD;
+    echo $html;
     exit;
 }
 
