@@ -41,6 +41,15 @@
     <br />
     <div class="row">
         <div class="col-sm-3">
+            <span>OR XML:</span></div>
+        <div class="col-sm-9">
+            <textarea class="form-control bs_input" rows="5" id="xml_input" name="xml_input"></textarea>
+
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3">
     <span>Your xpath: </span></div>
         <div class="col-sm-9">    <input type="text" name="xpath" id="xpath" class="bs_input">
    </div>

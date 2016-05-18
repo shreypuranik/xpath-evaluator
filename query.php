@@ -1,16 +1,43 @@
 <?php
 
-if (empty($_GET['url'])
-    || empty($_GET['xpath']))
+
+//url OR xml
+//xpath
+$incorrectFlag = false;
+
+if (empty($_GET['xpath'])){
+    $incorrectFlag = true;
+}
+
+if ((empty($_GET['url']))
+    && (empty($_GET['xml'])))
 {
-    echo '<div id="warning">Please ensure you have filled in both URL and xpath fields.</div>';
+    $incorrectFlag  = true;
+}
+
+if ($incorrectFlag){
+    echo "<p>Please ensure you've supplied both xpath AND a url OR a full XML.</p>";
     exit;
 }
 
+
 include_once("class.Scraper.php");
 
+
+
+
 $scraper = new Scraper();
-$scraper->setUpScraper($_GET['url'], $_GET['xpath']);
+if (!empty($_GET['url'])){
+    $scraper->setUpScraper($_GET['url'], $_GET['xpath']);
+}
+
+if (!empty($_GET['xml'])){
+    $xmlFromString = $scraper->getXMLFromString($_GET['xml']);
+    $scraper->setPageXML($xmlFromString);
+    $scraper->setXpath($_GET['xpath']);
+
+}
+
 $queryResponse = $scraper->getResponse();
 $output = "";
 $output .=<<<EOD

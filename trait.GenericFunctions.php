@@ -43,6 +43,12 @@ trait GenericFunctions
         return $xml;
     }
 
+    function getXMLFromString($string)
+    {
+        $xml = simplexml_load_string($string);
+        return $xml;
+    }
+
 
 
 
